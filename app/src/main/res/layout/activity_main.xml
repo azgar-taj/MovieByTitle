@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_margin="6dp"
+            android:id="@+id/movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Movie Name"
+            android:padding="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/speak_button"/>
+        <Button
+            android:id="@+id/speak_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPEAK"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Movies"
+        android:layout_gravity="center_horizontal"
+        android:onClick="start_search"/>
+    <ListView
+        android:id="@+id/searches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Hello"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/empty_dude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try Something Else"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"/>
+</LinearLayout>
